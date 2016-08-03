@@ -1,0 +1,6 @@
+
+---
+applications:
+ - name:    csrikhi-doc-downloader
+   host:    csrikhi-doc-downloader
+   memory:  128M

@@ -1,0 +1,40 @@
+{
+    "name": "bluemix-hello-node",
+    "version": "0.0.0",
+    "description": "This is a downloader where the user can download the list of dcuments",
+    "dependencies": {
+        "express": "~4.x",
+        "gulp-install": "^0.6.0",
+        "commander": "^2.6.0",
+        "http-post": "^0.1.1",
+        "http-proxy": "^1.8.1",
+        "cf-deployment-tracker-client": "*"
+    },
+    "devDependencies": {
+        "gulp-install": "^0.6.0",
+        "karma": "^0.13.22",
+        "karma-chrome-launcher": "^1.0.1",
+        "karma-firefox-launcher": "^1.0.0",
+        "karma-ie-launcher": "^1.0.0",
+        "karma-jasmine": "^1.0.2"
+    },
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js -a 127.0.0.1 -p 8080 -o"
+    },
+    "keywords": [
+        "Downloader",
+        "documents",
+        "json",
+        "angular",
+        "login",
+        "authentication",
+        "paging"
+    ],
+    "author": "csrikhi",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/csrikhi/IBM_Bluemix_Angular_NodeJs_App.git"
+    }
+}

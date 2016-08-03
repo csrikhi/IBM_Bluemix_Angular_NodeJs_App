@@ -1,0 +1,38 @@
+<section  ng-controller="documentctrl" class="documentcontainer">
+ <!--This is a Doc Page where the  Json List would be displayed and all the filter and search operation can be performed-->
+ <section class="user_login_options">
+  <h6 class="user_options" title="Name Of the User Logged In">Welcome !!! {{user_name}}</h6>
+  <a title="SignOut From The App" class="user_options_logout" ng-click="logout()">Logout<i class="fa fa-sign-out" aria-hidden="true"></i></a>
+</section>
+<a  class="tool_tip" href="#" tooltip-placement="bottom" uib-tooltip="This  app would help you filter  displayed  books according to Category(by selecting the category or typing the category).If you want to check any specific book you can type the name of the below mentioned book(or the book list available in ReadMe File) in the search bar  ">Note:<i class="fa fa-question-circle" aria-hidden="true"></i></a>
+<section class="searchdocuments">
+ <input list="testList" title="You Can  Perform the Search of Books From Different Categories" class="searchinputalign" type="text" ng-model="searchData" autocomplete=""  placeholder="Search By Bookname |Category">
+ <datalist id="testList">
+  <option value="Philosophy">Books Available ForCategory:Philosophy</option>
+  <option value="Animals">Books Available For Category:Animals</option>
+  <option value="Fairy Tales">Books Available For Category:FairyTales</option>
+  <option value="Science Fiction">Books Available For Category:ScienceFiction</option>
+</datalist>
+</section>
+<section class="docdisplay">
+  <section dir-paginate="docs in documentLoader|filter:searchData|itemsPerPage:3"  class="docitems">
+    <section class="doc_table">
+
+      <div class="table_row_bimage">
+        <img class="book_images" title="{{docs.name}}" ng-src="{{docs.imgsrc}}" alt="">  
+      </div>
+      <div class="table_row_bdetails">
+        <div class="table_heading">Book Name:<span class="">{{docs.name}}</span></div>
+        <div class="table_category_heading">Category:<span class="">{{docs.category}}</span></div>
+        <div class="table_view_heading">View & Download:<a class="download_target_btn" target="#" href="{{docs.url}}">Download</a></div>
+      </div>
+
+    </section>  
+    <hr>    
+  </section>
+</section>
+<section class="paginationctrls">
+  <dir-pagination-controls class="paginationctrlsalign" max-size="5" direction-links="true" boundary-links="true">
+  </dir-pagination-controls> 
+</section>   
+</section>

@@ -1,0 +1,71 @@
+<!Doctype html>
+<html ng-app="documentdownloader">
+
+<head>
+    <!--This is the list of meta tags that have been added to the main page -->
+    <meta name="description" content="This is document downloader">
+    <meta name="keywords" content="angularjs,javascript,routes">
+    <meta name="robots" content="selection">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+    <!--Main stylesheet file for all the styles being applied to different pages-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="container" ng-controller="mainindexctrl as mainctrl">
+        <header>
+            <div class="menuctrl">
+                <div class="logo menuctrlalign">
+                    <a class="linkctrl" ui-sref="docpage"><img class="logoimage" src="../assets/logo.jpg" /></a>
+                </div>
+                <div class="menuicon menuctrlalign"><button     ng-click="displaymenufnc()" class="linkctrl"><i class="fa" ng-class="{'fa-bars':!menu_show, 'fa-times':menu_show}" aria-hidden="true"></i></button></div> 
+                
+            </div>
+            <!--ng-class="{active:menu_show}"-->
+            <nav class="menunav" ng-show="menu_show">
+                <ul class="menunavalign">
+                    <li class="menulinks"><a class="menulink-path" ui-sref="newsevent">Latest Updates</a></li>
+                    <li class="menulinks"><a class="menulink-path" ui-sref="contactus">Contact Us</a></li>
+                </ul>
+                
+            </nav>
+        </header>
+        <section class="content">
+            <section ui-view></section><!--Area where all the sub pages are being routed and displayed like the docpage/contact us /news update -->
+        </section>
+        <footer>
+
+            <p>&copy;DocumentDownloader-2016</p>
+        </footer>
+    </section>
+    <!--All the cdns for the angular js  libraries  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular-resource.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular-route.min.js"></script>
+    <!--Library For local Storage-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-local-storage/0.2.7/angular-local-storage.min.js"></script>
+    <!--Library for Angular router-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap-tpls.min.js"></script>
+    <!--Main Script defining the angular app-->
+    <script src="scripts/mainscript.js"></script>
+    <!--Controllers-->
+    <script src="scripts/controller/mainindexcontroller.js"></script>
+    <script src="scripts/controller/logincontroller.js"></script>
+    <script src="scripts/controller/documentcontroller.js"></script>
+    <script src="scripts/controller/dirPaginate.js"></script>
+    <!--Routers-->
+    <script src="scripts/routes/mainrouter.js"></script>
+    <!--Json Data Loader-->
+    <script type="text/javascript" src="scripts/jsondata/docjson.json"></script>
+    <!--Factories-->
+    <script src="scripts/factory-service/loginfactoryservice.js"></script>
+</body>
+
+</html>

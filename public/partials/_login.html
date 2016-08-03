@@ -1,0 +1,14 @@
+<section ng-controller="loginctrl" class="loginpagecontainer">
+	<!--This is a login Authentication page where the user needs to enter the username and password and the login authentican controller would validate the credentials-->
+	<form class="loginform" ng-submit="loginAuthentication(username,password)" novalidate="">
+		<ul class="login_form_align">
+			<li class="login_list_align"><input class="login_input" type="text" placeholder="UserName:admin" ng-model="username" required=""></li>
+			<li class="login_list_align"><input class="login_input" type="password" placeholder="PassWord:admin" ng-model="password" required=""></li>
+			<li class="login_list_align"><input class="login_input login_input_btn" type="submit" value="Login"></li>
+		</ul>
+
+	</form>
+	<div id="error" ng-show="reset_error"> {{errorMessage}}</div>
+	<div id="success" ng-show="reset_success"> {{successMessage}}</div>
+
+</section>

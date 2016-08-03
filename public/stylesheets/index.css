@@ -1,0 +1,507 @@
+.isUserLoggedIn {
+	display: none; }
+	.fa-chevron-circle-down{
+		margin-left:22px;
+
+	}
+	.user_login_options{
+		overflow:hidden;
+	}
+	.user_options{
+		display: inline-block;
+		float: left;
+		font-size: 16px;
+		text-transform: capitalize;
+		color: rebeccapurple;
+		font-family: cursive;
+	}
+	.user_options_logout{
+		display: inline-block;
+		float: right;
+		cursor: pointer;
+		margin-right: 5px;
+		font-size: 16px;
+		color: green;
+		text-decoration: none;	
+		margin-top: 7px;
+	}
+	.user_options_logout:hover{
+		color:red;
+		text-decoration: none;	
+	}
+	.table_view_heading{
+		font-size:14px;
+	}
+	.table_category_heading{
+		font-size:14px;
+	}
+	.news_feeds{
+		margin: 0 auto;
+		margin-top: 231px;
+		text-align: center;
+		/* margin: 0 auto; */
+		cursor:pointer;
+
+	}
+	.contact_Details{
+		margin: 0 auto;
+		margin-top: 231px;
+		text-align: center;
+		cursor:pointer;
+		/* margin: 0 auto; */
+
+	}
+	body {
+		background: #474747; }
+
+		.container {
+			max-width: 1200px;
+
+			background: #fff;
+			overflow: hidden;
+			//border: 1px solid red;
+			margin-left:0;
+			padding-left:0;
+			margin-right:0;
+			padding-right:0;
+			margin: 0 auto; 
+		}
+		.container header {
+			width: 100%;
+			overflow: hidden;
+			background: #7BB6FF; }
+			.container header .menuctrl {
+				//border: 1px solid red;
+				overflow: hidden; }
+				.container header .menuctrl .logo {
+					float: left; }
+					.container header .menuctrl .logo .linkctrl .logoimage {
+						width: 60px;
+						height: 45px; 
+					}
+					button.linkctrl{
+						background: #7BB6FF;
+						border: none;
+					}
+					.container header .menuctrl .menuicon {
+						float: right;
+					}
+					.container header .menuctrl .menuicon .linkctrl .fa-bars {
+						font-size: 40px;
+						color: black;}
+
+
+						.container header .menuctrl .menuicon .linkctrl .fa-times{	font-size: 30px;
+							cursor: pointer;
+							color:black;
+						}
+						.container header .menuctrl .menuctrlalign {
+							display: inline-block; }
+							.container header .menunav {
+								background:none; }
+								.container header .menunav .menunavalign {
+									list-style-type: none; 
+									margin-bottom:0;
+									margin-left: 35px;
+								}
+								/*.container header .menunav{ display: none;}*/
+								.container header nav.active {
+									display:block;
+								}
+								.container header .menunav .menunavalign .menulinks {
+									//border: 1px solid green;
+									height: 50px;
+									/* margin-bottom: 3px; */
+									/* padding-top: 10px; */
+									overflow: hidden;
+									text-align: left;
+									/* background				}: red; */
+								}
+
+								.container header .menunav .menunavalign .menulinks .menulink-path{
+									display: block;
+									overflow: hidden;
+									/* background: red; */
+									/* border: 1px solid yellow; */
+									/* padding-top: 15px; */
+									padding-bottom: 18px;
+									padding-top: 7px;
+									padding-left: 28px;
+									font-size: 20px;
+									font-family: sans-serif;
+									color:#fff;
+								}
+								.container .content {
+									height: auto;
+									background: url("../assets/banner_img.png");
+									background-repeat: no-repeat;
+									background-position: center top;
+									overflow: hidden;
+									background-size: 303px;
+									min-height: 90vh;
+
+								}
+								.container .content .loginpagecontainer{
+									margin: 0 auto;
+									//border: 1px solid red;
+									margin-top: 278px;
+									overflow: hidden;
+								}
+								.container .content .loginpagecontainer .loginform .login_form_align{
+									margin: 0;
+									padding: 0;
+									text-align: center;
+								}
+								.container .content .loginpagecontainer .loginform .login_form_align .login_list_align{
+									margin-bottom: 7px;
+								}
+								.container .content .loginpagecontainer .loginform .login_form_align .login_list_align .login_input{
+									border: 1px solid #7BB6FF;
+									border-radius: 3px;
+									height: 39px;
+									text-align: left;
+									width: 250px;
+									font-weight: 600;
+									font-size: 13px;
+								}
+								.container .content .loginpagecontainer .loginform .login_form_align .login_list_align .login_input_btn{
+									width: 250px;
+									cursor: pointer;
+									text-align: center;
+									font-weight: bold;
+									font-size: 16px;
+									background: #7BB6FF;
+								}
+								.container footer {
+									background: #7BB6FF;
+
+									height: 40px;
+									text-align: center;
+									color: #fff;
+								}
+								.documentcontainer .searchdocuments{
+
+									//padding-top: 23px;
+
+
+								}
+								.documentcontainer .tool_tip{
+
+									text-align:center;
+									display:block;
+								}
+								.documentcontainer .searchdocuments .searchinputalign{
+									margin: 0 auto;
+									border: 1px solid #70A6E8;
+									display: block;
+									width: 292px;
+									height: 36px;
+									border-radius: 3px;
+									text-align: left;
+									cursor: pointer;
+									text-transform: uppercase;
+									font-family: cursive;
+									color: #70A6E8;
+									font-size:12px;
+								}
+
+								.documentcontainer .categories_accordion{
+									margin: 0 auto;
+									width: 271px;
+									border-radius: 0px;
+									overflow: hidden;
+									padding: 0;
+									z-index: 1000;
+									position: absolute;
+									left:57px !important;
+
+								}
+								.panel-default > .panel-heading{
+									padding: 0;
+									margin: 0;
+
+
+								}
+								.accord_heading{
+									margin: 0;
+									padding: 0;
+									font-weight: normal;
+
+								}
+								.documentcontainer .docdisplay    
+								{
+									margin: 0 auto;
+									margin-top: 163px;
+									width: 291px;
+									/* border: 1px solid red; */
+									overflow: hidden;
+
+								}
+								.documentcontainer .docdisplay .doc_table 
+								{
+									overflow: hidden;
+
+
+								}
+
+								.documentcontainer .docdisplay .doc_table  .table_row_bdetails{
+									display: inline-block;
+									float: left;
+									overflow: hidden;
+									clear: right;
+									width: 70%;
+									height: 102px;
+									padding-top: 22px;
+									padding-left: 16px;
+									text-align: left;
+									cursor:pointer;
+
+								}
+								.documentcontainer .docdisplay .doc_table .table_row_bdetails .table_heading{
+									font-family: cursive;
+									font-weight: bold;
+									font-size: 15px;
+									color: #CF834F;
+									text-decoration: underline;
+
+								}
+								.documentcontainer .docdisplay .doc_table .table_row_bimage{
+									display: inline-block;
+									float: left;
+									width: 30%;
+									overflow: hidden;
+									border: 1px solid red;
+									cursor:pointer;
+
+								}
+								.documentcontainer .docdisplay .doc_table .table_row_bimage .book_images{
+									width: 100%;
+									overflow: hidden;
+									height: 100px;
+								}
+								.documentcontainer .paginationctrls{
+									text-align: center;
+								}
+								.paginationctrlsalign{
+									padding-left: 10px;
+								}
+								.download_target_btn{
+
+									color: #fff;
+									text-decoration: none;
+									background: #337ab7;
+									border-radius: 3px;
+									cursor: pointer;
+									padding: 3px;
+									text-decoration:none;
+								}
+								.download_target_btn:hover{
+									text-decoration:none;
+									color:#fff;
+								}
+								#error{
+									color: red;
+									text-align: center;
+								}
+								#success{
+									color: red;
+									text-align: center;
+
+								}
+
+								@media only screen and (min-width: 480px) and (max-width:767px){
+									.container .content {
+
+									} 
+									.container .content .loginpagecontainer{
+
+									}
+									.container .content .loginpagecontainer .loginform .login_form_align{
+										text-align: center;
+									}
+									.container .content .loginpagecontainer .loginform .login_form_align .login_list_align{
+
+									}
+									.container .content .loginpagecontainer .loginform .login_form_align .login_list_align .login_input{
+										width: 297px;
+									}
+									.container .content .loginpagecontainer .loginform .login_form_align .login_list_align .login_input_btn{
+										width: 297px;
+									}
+									.documentcontainer .paginationctrls {
+										margin-top: 10px;
+										margin: 0 auto;
+										/* border: 1px solid red; */
+										/* width: 600px; */
+										overflow: hidden;
+										text-align: center;
+									}
+									.documentcontainer .paginationctrls .paginationctrlsalign  {
+
+										//padding-left: 20%;
+									}
+									.documentcontainer .docdisplay {  margin-top: 163px;
+										//width: 600px;
+										//margin:0 auto;
+									}
+									.documentcontainer .docdisplay .docitems{
+										font-size: 22px;
+									}
+									.documentcontainer .searchdocuments .searchinputalign {
+										margin: 0 auto;
+										border: 1px solid #70A6E8;
+										display: block;
+										width: 352px;
+										height: 36px;
+										border-radius: 3px;
+										text-align: left;
+										cursor: pointer;
+										text-transform: uppercase;
+										font-family: cursive;
+										color: #70A6E8;;
+										cursor: pointer;
+										font-size:14px;
+									}
+									.documentcontainer .categories_accordion{
+										left:110px !important;
+									}
+
+								}
+								@media only screen and (min-width: 768px){
+									.container .content {
+										//background-position: 251px 82px;
+
+									}
+									.container .content .loginpagecontainer{
+
+									}
+									.container .content .loginpagecontainer .loginform .login_form_align{
+										text-align: center;
+									}
+									.container .content .loginpagecontainer .loginform .login_form_align .login_list_align{
+
+									}
+									.container .content .loginpagecontainer .loginform .login_form_align .login_list_align .login_input{
+										width: 297px;
+									}
+									.container .content .loginpagecontainer .loginform .login_form_align .login_list_align .login_input_btn{
+										width: 297px;
+									}
+									.documentcontainer .searchdocuments .searchinputalign{
+
+										width: 638px;
+										height: 46px;
+
+									}
+									.documentcontainer .tool_tip{
+										margin-top:-10px;
+										text-align:center;
+										display:block;
+									}
+									.documentcontainer .paginationctrls {
+										margin-top: 10px;
+										margin: 0 auto;
+										/* border: 1px solid red; */
+										/* width: 600px; */
+										overflow: hidden;
+										text-align: center;
+									}
+									.documentcontainer .paginationctrls .paginationctrlsalign  {
+
+										//padding-left: 20%;
+									}
+									.documentcontainer .docdisplay {  
+										width: 600px;
+									}
+									.documentcontainer .docdisplay .docitems{
+										font-size: 22px;
+									}
+									.documentcontainer .categories_accordion{
+
+										left:146px !important;
+									}
+								}
+								/* Medium Devices, Desktops */
+								@media only screen and (min-width: 992px) {
+									.container{
+										margin:0 auto;
+									}
+
+									.container header .menunav{
+										margin-right: 8px;
+
+
+									}
+									.container header .menuctrl {
+										width: 60px;
+										overflow: hidden;
+										float: left;
+										display: inline-block;
+									}
+									.container header .menuctrl .logo {
+										display: inline-block;
+										width: 60px; }
+										.container header .menuctrl .logo .linkctrl .logoimage {
+											width: 58px;
+											height: 55px;}
+											.container header .menuctrl .menuicon {
+												display: none; }
+												.container header .menunav {
+													display: inline-block !important;
+													float: right;
+													//margin-right: 23px; 
+													background: none;
+												}
+												.container header .menunav .menunavalign .menulinks {
+													display: inline-block;
+													padding: 0px;
+													border:none;
+												} 
+
+												.container .content{
+													//background-position: 479px 90px;
+
+												}
+												.container .content .loginpagecontainer{
+
+												}
+												.container .content .loginpagecontainer .loginform .login_form_align{
+													text-align:center;
+												}
+												.container .content .loginpagecontainer .loginform .login_form_align .login_list_align{
+
+												}
+												.container .content .loginpagecontainer .loginform .login_form_align .login_list_align .login_input{
+													width: 320px;
+												}
+												.container .content .loginpagecontainer .loginform .login_form_align .login_list_align .login_input_btn{
+													width: 320px;
+												}
+
+												.documentcontainer .searchdocuments .searchinputalign{
+													
+													width: 900px;
+													
+
+
+												}
+												.documentcontainer .docdisplay{
+
+													margin-top: 246px;
+													width: 700px;
+
+												}
+												.documentcontainer .paginationctrls{
+
+													margin: 0 auto;
+													width: 500px;
+													margin-top: 50px;
+												}
+												.documentcontainer .categories_accordion{
+													left:262px !important;
+												}
+
+											}
+
+											/* Large Devices, Wide Screens */
+
